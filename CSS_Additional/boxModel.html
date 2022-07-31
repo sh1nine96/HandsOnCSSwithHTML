@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: bisque;
+            width: 50%; /*rel or % will be used more as it will give a dynamic feature*/
+          /*  height: 100px; height is usually not given as it is auto adjusted, only take required space*/
+            min-width: 300px;
+            max-width: 500px;
+            /*padding too a is collection of 4 properties(top, right,bottom, and left)*/
+            /* padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px; */
+            padding: 10px 15px 20px 25px; /*top->right->bottom->left(clock rule)*/
+            border: 1px solid red;
+            border-left: 8px dashed blue; /*same like margin/padding we control all sides of border too*/
+            border-width: 8px; /*for all sides, it will override the 1px */
+            border-right-style: double; 
+            /* Vertical margins collapse for block-level elements, i.e. the vertical margin between two block-level elements that appear one below another would be the maximum of margin-bottom of the one above, and margin-top of the other. */
+            margin-top: 30px; /*margin is collection of 4 properties(top, right,bottom, and left)*/
+            margin-bottom: 20px;
+        }
+        #header{
+            background-color: cornflowerblue;
+            width: fit-content;
+            text-align: center;
+        }
+    </style>
+</head>
+<body style="background: springgreen;">
+    <div id="header"> <h1>Box Model</h1></div>
+   
+    <hr>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus laudantium deserunt ut ducimus tenetur eum consequatur nihil, consequuntur debitis neque reprehenderit asperiores, doloremque deleniti tempora, doloribus quaerat eligendi eaque voluptas!</p>
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa illum unde praesentium, enim consequuntur labore aspernatur in reprehenderit libero neque optio maiores ipsa veniam aperiam ab, autem iusto deleniti ratione.</p>
+    </div>
+    <div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt nemo provident pariatur omnis tempora reiciendis nisi quam nam cumque quibusdam perferendis delectus molestiae, nulla unde rerum porro dolore excepturi? Temporibus!</p>
+    </div>
+</body>
+</html>
