@@ -1,0 +1,36 @@
+/* pseudo class selectors based on structure of webpage */
+a:first-child{
+    color: chartreuse;
+} /*here it means anchor tag which is the first child,  only that to be coloured */
+
+
+/* here we will use space between, it will target fist child of given element tags */
+
+div :first-child{
+    color: red;
+} /*here it means first child of div tag hence its targeting p which is first child of div tag */
+
+p :first-child{
+    font-style: italic;
+} /*here it means first child of p tag hence its targeting a which is first child of div tag */
+
+
+/* nth child */
+
+a:nth-child(2){
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+p :nth-child(3){
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.5em;
+    color: darkcyan;
+    border: 1px solid red;
+}
+
+/* ofType pseudo class selector */
+p a:nth-of-type(2){
+    color: goldenrod;
+    text-decoration: none;
+}/*here it will target 2nd anchor tag inside a p tag */

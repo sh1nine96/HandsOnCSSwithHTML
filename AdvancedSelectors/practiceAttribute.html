@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Attribute</title>
+    <style>
+        body{
+            background-color: burlywood;
+        }
+        [title]{
+            color: darkgreen;
+            font-family:'Courier New', Courier, monospace;
+        }
+        p[title]{
+            font-size: 35px;
+            color: aqua;
+            font-weight: bold;
+            border: 1px solid black;
+        }
+
+        p[title="Introduction"]{
+            color: purple;
+            background-color: bisque;
+        }
+
+        p[title="Concluding paragraph"]{
+            border: 2px dotted gray;
+        }
+    </style>
+</head>
+<body>
+    <p title="Introduction">Lorem ipsum dolor</p>
+
+<div title="Introduction">
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nihil obcaecati dolor explicabo neque in quasi accusamus odio qui dolorem consectetur, praesentium quam id magni hic modi? Autem, eius? Animi harum voluptatem adipisci sequi sunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit tempora velit voluptate voluptas facere neque.</p>
+
+       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci magnam optio, ullam ipsum nam quod porro rerum recusandae veniam consequatur.</p>
+
+</div>
+
+<p title="Concluding paragraph">Lorem ipsum dolor</p>
+</body>
+</html>

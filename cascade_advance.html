@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* class selector has more priority than type selector as its more specific, and same way id selector has more specificity than clas selector*/
+        #para-1{
+            color: hotpink;
+        }
+        .p{
+            color: blueviolet;
+        }
+        p{
+            color: olivedrab;
+        }
+    </style>
+</head>
+<body>
+    <!-- Here we will see that the last one standing rule will not apply when we have different selectors -->
+    <h1>Cascading advance</h1>
+    <p id="para-1" class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sequi quod ratione inventore rerum nulla laudantium reprehenderit assumenda? Tenetur rem ab debitis! Sint, et necessitatibus voluptatem neque sed odio debitis!</p>
+</body>
+</html>

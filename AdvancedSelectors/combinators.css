@@ -1,0 +1,28 @@
+/* Descendent Selector - space is the ancestor-descendent combinator */
+div a {
+    color: olive;
+}
+
+/* it will target 'a' which is child of 'p', which is child of div */
+div p a {
+    color: brown;
+    font-size: 1.3em;
+} /* any property we give here would given more preference over 'p>a' */
+
+/* Child selector '>' is the parent child combinator */
+p>a {
+    color: chartreuse;
+    font-size: 2em;
+
+}
+
+/* No space */
+.nospace{
+    background-color: lightpink;
+}
+
+/* type selector combining with class selector */
+/* only target class nospace if its inside p tag */
+p.nospace{
+    background-color: lightskyblue;
+}

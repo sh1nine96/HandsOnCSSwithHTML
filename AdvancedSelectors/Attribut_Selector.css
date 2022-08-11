@@ -1,0 +1,46 @@
+/* Attribute Selector-> selecting different elements wherever href attribute is present in  */
+[href]{
+    color: olive;
+}
+
+/* combining attribute and type selector-> selects only where both anchor and href tags are present. usually attribute selctor is combined with type selector */
+a[href]{
+    color: crimson;
+    text-decoration: none;
+}
+
+/* We can also also combinine attribute selectors acc to their values matching[Attribute+ Value Selector] */
+
+a[href="https://www.google.com/"]{
+    font-size: 1.6rem;
+    color: goldenrod;
+}
+
+/* We can also select element have target attribute this way */
+
+a[target="_blank"]{
+    color: purple;
+    border: 1px solid green;
+    margin: 2px 2px 2px 0;
+}
+
+/* div{
+    width: 1800px;
+    height: 2250px;
+    background-image: url('https://image.shutterstock.com/image-vector/vector-illustration-christmas-illumination-300x250px-600w-1216588351.jpg');
+    background-repeat: repeat-x;
+    background-repeat: repeat-y;
+    border: 1px solid steelblue;
+} */
+
+[title*= "value"]{
+    background-color: blueviolet;
+    color: aliceblue;
+}
+
+[class~= sm]:hover{
+    cursor: pointer;
+    background-color: aquamarine;
+}
+
+::selection{background-color: lightgreen;}

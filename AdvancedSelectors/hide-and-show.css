@@ -1,0 +1,15 @@
+div{
+    border: 1px solid rgb(113, 226, 113);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+#message{
+    /* it will hide the div2 */
+    display: none;
+}
+
+h1::after {
+
+    content: url(https://media1.giphy.com/media/LHZyixOnHwDDy/200.webp?cid=ecf05e47bzyvwffchfaic5kuoxil54tut7khd97y7avxhxvy&rid=200.webp&ct=g);
+  
+  }

@@ -1,0 +1,74 @@
+/* Some pseudo class selectors(called pseudo bcz of their starting with : not .) */
+p:first-letter{
+    font-size: 1.7em;
+}
+
+p::first-line{
+    color: crimson;
+    font-size: 1.2em;
+}
+
+h1::first-letter{
+    color: blue;
+}
+
+::first-line{
+    color: chartreuse;
+}
+
+/* Change property when we hover onto some element */
+
+
+p[href="https://www.facebook.com/"]:hover{
+    cursor: pointer;
+    background-color: darkgray;
+}
+
+h1:hover{
+    cursor: grab;
+    background-color: rgb(201, 141, 200);
+}
+
+p[class="intro"]:hover{
+    background-color: cadetblue;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+/* Unvisited pseudo class link->applies specifically to anchor tag */
+a:link{
+    color: blue;
+    background-color: pink;
+}
+
+/* visited pseudo class link-> applies specifically to anchor tag */
+
+a:visited{
+    background-color: aquamarine;
+    color: black;
+}
+
+/* upper pseudo class selector will override this property */
+a[href="https://www.wikipedia.org/"]:visited{
+    color: rgb(238, 175, 15);
+    background-color: rgb(235, 227, 227);
+}
+
+a:hover{
+    color: rgb(33, 10, 33);
+    background-color: rgb(227, 152, 219);
+} 
+
+/* active pseudo class selector->can be applied to any tag */
+a:active{
+    background-color: purple;
+}
+
+p:active{
+    background-color: chartreuse;
+}
+
+/* Note-> usually the preference to apply these pseudo class selectors are in order of :link > :visited > :hover > :active a.k.a LVHA. if we apply :active before :hover then :active properties would never be visible*/
+
+
+

@@ -1,0 +1,55 @@
+/* these are all li which are inside ul */
+/* We will also see how to calculate value of specificity, taking eg. (a,b,c,d)
+   where a is always 0 except for inline style eg. <a style="color: blue;">
+   b is no. of #ids present in a rule
+   c is no. of classes present inside a rule including pseudo class
+   d is the no. of type selectors present inside
+   specificity is (a>b>c>d) */
+
+
+::selection{background-color: rgb(212, 221, 39);}
+
+/* specificity=(0,0,0,2) */
+ul li {
+    color: olive;
+    cursor: pointer;
+}
+
+/* (0,0,1,2) */
+ul li:hover {
+    background-color: aquamarine;
+}
+
+/* only target where li inside ul has a class as "class" */
+/* (0,0,2,2) */
+ul li.class:hover {
+    font-size: 2em;
+}
+
+ul li:active{
+    background-color: chartreuse;
+}
+
+
+
+/* but the following rule will override the properties of `ul li{}` as this would be more specific bcz here here we are being more specific */
+/* (0,0,0,3) */
+div ul li {
+    font-size: 1.2em;
+    color: red;
+}
+
+/* same rule applies here */
+/* (0,0,0,3) */
+html body div {
+    font-style: italic
+}
+
+/* (0,0,0,1) */
+div {
+    font-style: oblique;
+}
+
+/* div ul{
+    font-size: 40px;
+} */

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <style>
+        /* specificity or importance is more for id level than class level  and for class its more than type level, hence color would be darkblue */
+        p {
+            color: red;
+        }
+        .class {
+            color: purple;
+        }
+        #id{
+            color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <p id="id" class="class">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur dolore nihil culpa molestias. In accusamus, expedita quos hic id quibusdam ipsam ab iste soluta inventore ducimus perferendis, itaque, rerum enim!</p>
+</body>
+</html>
